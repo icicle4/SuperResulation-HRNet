@@ -113,7 +113,6 @@ class CocoDataset(Dataset):
                 cv2.IMREAD_COLOR | cv2.IMREAD_IGNORE_ORIENTATION
             )
         else:
-            print(self._get_image_path(file_name))
             img = cv2.imread(
                 self._get_image_path(file_name),
                 cv2.IMREAD_COLOR | cv2.IMREAD_IGNORE_ORIENTATION
