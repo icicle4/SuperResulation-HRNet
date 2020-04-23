@@ -59,7 +59,7 @@ MODEL:
   INIT_WEIGHTS: True
   NAME: pose_super_hrnet
   NUM_JOINTS: 17
-  PRETRAINED: ''
+  PRETRAINED: "/content/drive/My Drive/hrnet_w32-36af842e.pth"
   TAG_PER_JOINT: True
 TEST:
   FLIP_TEST: True
