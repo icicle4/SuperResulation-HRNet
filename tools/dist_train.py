@@ -28,17 +28,17 @@ from tensorboardX import SummaryWriter
 import _init_paths
 import models
 
-from lib.config import cfg
-from lib.config import update_config
-from lib.core.loss import MultiLossFactory
-from lib.core.trainer import do_train
-from lib.dataset import make_dataloader
-from lib.fp16_utils.fp16util import network_to_half
-from lib.fp16_utils.fp16_optimizer import FP16_Optimizer
-from lib.utils.utils import create_logger
-from lib.utils.utils import get_optimizer
-from lib.utils.utils import save_checkpoint
-from lib.utils.utils import setup_logger
+from config import cfg
+from config import update_config
+from core.loss import MultiLossFactory
+from core.trainer import do_train
+from dataset import make_dataloader
+from fp16_utils.fp16util import network_to_half
+from fp16_utils.fp16_optimizer import FP16_Optimizer
+from utils.utils import create_logger
+from utils.utils import get_optimizer
+from utils.utils import save_checkpoint
+from utils.utils import setup_logger
 
 
 def parse_args():
