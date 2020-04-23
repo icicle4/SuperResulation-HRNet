@@ -22,7 +22,7 @@ DATASET:
   MAX_TRANSLATE: 40
   MIN_SCALE: 0.75
   NUM_JOINTS: 17
-  ROOT: '/content/'
+  ROOT: "/content/"
   TEST: val2017
   TRAIN: train2017
 DEBUG:
