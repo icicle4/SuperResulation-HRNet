@@ -26,7 +26,7 @@ def build_dataset(cfg, is_train):
         _HeatmapGenerator = ScaleAwareHeatmapGenerator
     else:
         _HeatmapGenerator = HeatmapGenerator
-
+    print('output_size', cfg.DATASET.OUTPUT_SIZE)
     heatmap_generator = [
         _HeatmapGenerator(
             output_size, cfg.DATASET.NUM_JOINTS, cfg.DATASET.SIGMA
