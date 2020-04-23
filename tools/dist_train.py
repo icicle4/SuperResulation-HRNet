@@ -25,7 +25,7 @@ import torch.utils.data
 import torch.utils.data.distributed
 from tensorboardX import SummaryWriter
 
-from tools import _init_paths
+from . import _init_paths
 from lib import models
 
 from lib.config import cfg
