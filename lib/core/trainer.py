@@ -13,8 +13,8 @@ import logging
 import os
 import time
 
-from lib.utils.utils import AverageMeter
-from lib.utils.vis import save_debug_images
+from utils.utils import AverageMeter
+from utils.vis import save_debug_images
 
 
 def do_train(cfg, model, data_loader, loss_factory, optimizer, epoch,
