@@ -31,6 +31,8 @@ class HeatmapLoss(nn.Module):
         super().__init__()
 
     def forward(self, pred, gt, mask):
+        print('pred', pred.size())
+        print('gt', gt.size())
         assert pred.size() == gt.size()
         loss = ((pred - gt)**2) * mask[:, None, :, :].expand_as(pred)
         loss = loss.mean(dim=3).mean(dim=2).mean(dim=1)
